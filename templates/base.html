@@ -1,16 +1,41 @@
 <html>
     <head>
-      <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-      <title>{{ title }} - New Titles</title>
+      <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+      <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Kanit:wght@100;200&family=Nunito:wght@300&family=Raleway:wght@200&display=swap" rel="stylesheet">
     </head>
     <header>
-        <h1>Luptons Little Library</h1>
+        <div class="centred">
+            <h1><b>Luptons Little Library</b></h1>
+            <div class="header-widget">
+                <ul class="links">
+                    <li clas="navLink"><a href="/">Home</a></li>
+                </ul>
+        </div>
     </header>
-    <body>
-        <ul>
-          <li clas="navLink"><a href="/">Home</a></li>
-        </ul>
-        <hr>
-        {% block content %}{% endblock %}
+        <body>
+            <main>
+                <div class="centred">
+                    {% block content %}{% endblock %}
+                </div>
+            </main>
+        <footer class="footer">
+            <div class="container row footer-area centred">
+                <h3><i>
+                    Luptons Little Library
+                </h3></i>
+                <div class="footer-widget">
+                    <ul class="links">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Upcoming Events</a></li>
+                    </ul>
+                </div>
+                <div class="footer-widget">
+                    <p><br>666, New Road, Glasgow, G23 4LL <br>
+                        <a href="#">0141 406 756</a> <br>
+                        <a href="#">contact@luplillibrary.com</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
