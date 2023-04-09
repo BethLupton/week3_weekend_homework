@@ -1,0 +1,16 @@
+<html>
+    <head>
+      <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+      <title>{{ title }} - New Titles</title>
+    </head>
+    <header>
+        <h1>Luptons Little Library</h1>
+    </header>
+    <body>
+        <ul>
+          <li clas="navLink"><a href="/">Home</a></li>
+        </ul>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
